@@ -1,0 +1,261 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left sclasse */
+  .left {
+    display: flex;
+    left: 0;
+    background-color: rgb(15, 90, 160);
+  }
+  
+  /* Control the right side */
+  .right {
+    display: flex;
+    right: 0;
+    background-color: azure;
+  }
+  
+  /* For bringing the content in center horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.upperStrap{
+position: absolute;
+width: 172px;
+height: 110px;
+background:rgb(75, 2, 75);
+border-radius: 61px 61px 3px 3px;
+top:8%;
+left:36%;
+}
+.lowerStrap{
+    position: absolute;
+    width: 172px;
+    height: 110px;
+    background: rgb(75, 2, 75);
+    border-radius: 3px 3px 61px 61px;
+    top: 77%;
+    left: 36%;
+}
+  
+
+.body{
+position: absolute;
+width: 248px;
+height: 360px;
+background: rgb(53, 52, 52);
+border-radius: 45px;
+top: 24%;
+left: 30%;
+}
+.homescreen{
+  position: absolute;
+  left:1%;
+  width: 244px;
+  height: 278px;
+  background:black;
+  border-radius: 15px;
+}
+
+.messagingButton{
+  position: relative;
+  /* border:none; */
+  background-color: rgb(150, 27, 68);
+  color: white;
+  padding: 3px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  top: 88%;
+  left:23%;
+}
+.musicButton{
+  position: relative;
+  /* border:none; */
+  background-color: rgb(150, 27, 68);
+  color: white;
+  padding: 3px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  top: 88%;
+  left:28%;
+}
+.clockButton{
+  position: relative;
+  /* border:none; */
+  background-color: rgb(150, 27, 68);
+  color: white;
+  padding: 3px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  top: 88%;
+  left:33%; 
+}
+.chatBaloon{
+position: absolute;
+left:8%;
+width: 200px;
+height: 120px;
+background: rgba(25, 247, 220, 0.92);
+mix-blend-mode: normal;
+border-radius: 26px;
+}
+.notificationBar{
+  height: 20px;
+  background-color: aliceblue;
+  width: 100%;
+  border-radius:10px;
+  padding: 10px;
+}
+.reply{
+position: absolute;
+width: 80px;
+height: 34px;
+background: #4CAD11;
+border-radius: 15px;
+left:13%;
+top:75%;
+}
+
+  .dismiss{
+    position: absolute;
+    width: 80px;
+    height: 34px;
+    background: rgb(248, 89, 89);
+    border-radius: 15px;
+    left:49%;
+    top:75%;
+    }
+.replyDismiss{
+position: absolute;
+width: 34px;
+height: 16px;
+font-family:sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 16px;
+color: #FFF5F5;
+padding: 20px;
+top:-22%;
+left:-10%;
+}
+.reply{
+  position: absolute;
+  width: 34px;
+  height: 16px;
+  font-family:sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFF5F5;
+  padding: 20px;
+  top:-20%;
+  left:-10%;
+  }
+.messages{
+ position: absolute;
+    left:1%;
+    width: 244px;
+    height: 278px;
+    background:black;
+    border-radius: 15px;
+   }
+  .stopwatch{
+      position: absolute;
+      left:1%;
+      width: 244px;
+      height: 278px;
+      background:black;
+      border-radius: 15px;
+      text-align: center;
+   }
+   #timer{
+     top:50px
+     color: aliceblue;
+     font-size:50px;
+     font-weight: 200;
+   }
+   #start{
+     top:80px;
+   }
+   #restart{
+     top:80px;
+   }
+  .musicplayer{
+        position: absolute;
+        left:1%;
+        width: 244px;
+        height: 278px;
+        background: black;
+        border-radius: 15px;
+    }
+.currentTime{
+  position: absolute;
+  left:12%;
+  width: 180px;
+height: 70px;
+background: rgba(241, 235, 151, 0.92);
+/* mix-blend-mode: normal; */
+border-radius: 10px;
+top:15%;
+}
+.currentDate{
+  position: absolute;
+  left:18%;
+  width: 150px;
+height: 30px;
+background: rgba(241, 235, 151, 0.92);
+/* mix-blend-mode: normal; */
+border-radius: 10px;
+top:42%;
+}
+#time{
+  position: absolute;
+  text-align: center;
+  align-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  padding: 10px;
+  top: -15%;
+  left: 10%;
+}
+#day{
+  position: absolute;
+  color:azure;
+  align-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  /* padding: px; */
+  top: -10%;
+  left: 14%;
+}
+.notifications{
+  position: absolute;
+  left:18%;
+  width: 150px;
+height: 45px;
+background: rgba(247, 245, 226, 0.92);
+/* mix-blend-mode: normal; */
+border-radius: 10px;
+top: 55%;
+}
