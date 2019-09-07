@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMARTWATCH</title>
+        <!--Linking of the CSS file-->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Meta data for search engines and browsers-->
+        <meta charset="UTF-8">
+        <meta name="author" content="ROUSHAN RAJ">
+        <meta name="viewport" content="width = device-width, 
+        initial-Scale = 1.0">
+        
+    </head>
+
+
+    <body style="font-family: sans-serif"> 
+
+                
+        <div class="split left">
+            <div class="centered">
+            <h1 style="color:white">Smart <span style="color: black">Watch</span></h1>
+            </div>
+        </div>
+
+
+        <div class="split right">
+            <div class ="upperStrap"></div>
+            <div class="lowerStrap"></div>
+            <div class="body">
+                <button class="messaging"name="button"id="first" value="OK" type="button">💬</button>
+                <button class="music"name="button" id="second"value="OK" type="button">🎵</button>
+                <button class="clock"name="button" id="third"value="OK" type="button">🕓</button>
+                       
+                <div class="musicplayer"style="display: block">
+                        <div class="playMusic">
+                                <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                width="238" height="260" frameborder="0" allowtransparency="true"
+                                allow="encrypted-media"></iframe>
+                        </div>
+                </div> 
+                
+                
+                <div class="stopwatch" style="display: block">
+                   
+                    
+
+                </div>  
+
+                <div class="messages"style="display: block">
+                    <div class="dayNTime"></div>
+                    <div class="chatBaloon"></div>
+                    <div class="replyBaloon">
+                        <p class="replyDismiss">REPLY</p>
+                    </div>
+                    <div class="dismissBaloon">
+                        <p class="replyDismiss">DISMISS</p>
+                    </div>
+                    
+                </div> 
+               
+                
+
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="script.js" type="text/javascript"></script>
+        
+    </body>
+</html>
