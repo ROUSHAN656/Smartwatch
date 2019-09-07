@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SMARTWATCH</title>
+        <!--Linking of the CSS file-->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Meta data for search engines and browsers-->
+        <meta charset="UTF-8">
+        <meta name="author" content="ROUSHAN RAJ">
+        <meta name="viewport" content="width = device-width, 
+        initial-Scale = 1.0">
+        
+    </head>
+
+
+    <body style="font-family: sans-serif"> 
+
+         <!-- The left half of the page        -->
+        <div class="split left">
+            <div class="centered">
+            <h1 style="color:white">Smart <span style="color: black">Watch</span></h1>
+            </div>
+        </div>
+
+<!--        The right half of the page -->
+        <div class="split right">
+            <!-- upper strap of the watch -->
+            <div class ="upperStrap"></div>
+            <!--lower strap of the watch-->
+            <div class="lowerStrap"></div>
+            <!--watch body-->
+            <div class="body">
+                <button class="messagingButton"name="button"id="first" value="OK" type="button">💬</button>
+                <button class="musicButton"name="button" id="second"value="OK" type="button">🎵</button>
+                <button class="clockButton"name="button" id="third"value="OK" type="button">🕓</button>
+                       
+                <div class="musicplayer"style="display: block">
+                        <div class="playMusic">
+                                <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                width="238" height="260" frameborder="0" allowtransparency="true"
+                                allow="encrypted-media"></iframe>
+                        </div>
+                </div> 
+                
+                
+                <div class="stopwatch">
+                            <!-- <div class="currentTime" style="background-color: tomato"><p class="time">10:00</p></div>
+                            <div class="currentDate"style="background-color: grey"><p class="day">Saturday</p></div>    -->
+                            <h1 id="timer"style="color:azure">00:00:00</h1>
+                            <button id="start">START</button>
+                            <button id="reset">RESET</button>
+
+
+                </div>  
+                
+                <!--homescreen-->
+                <div class="homescreen">
+                        <div class="currentTime" style="background-color: tomato"><p id="time">10:00</p></div>
+                        <div class="currentDate"style="background-color: grey"><p id="day">Saturday</p></div>
+                        <div class="notifications">.    <strong>4 missed calls<br>.    2 messages</strong></div>
+                        
+                </div>
+
+                <div class="messages">
+                        <div class="NotificationBar"><p style="color: thistle">.  Messaging</p><p</div>
+                        <div class="chatBaloon"><p><strong>.   Satya:</strong></p><p>Hey, this is a sample text to show the messages</p></div>
+                        <button class="reply"name="button"id="reply" value="OK" type="button">REPLY</button>
+                        <button class="dismiss"name="button"id="dismiss" value="OK" type="button">DISMISS</button>
+                </div>
+        </div>
+
+        <!--linking of js file and jquery-->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="script.js" type="text/javascript"></script>
+        <script src="stopwatch.js" type="text/javascript"></script>
+        
+    </body>
+</html>
