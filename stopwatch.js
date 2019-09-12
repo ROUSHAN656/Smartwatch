@@ -51,5 +51,3 @@ function Stopwatch(){
     };
     this.reset=function(){};
 }
-// var watch=new stopwatch();
-// watch.start();
