@@ -6,4 +6,4 @@ It has been developed using basic fundamental concepts of HTML, CSS, Javascript 
 
 For preview https://priceless-dubinsky-94abce.netlify.com/
 
-Designed and developed by:- Roushan Raj
+Designed and developed by:- [Roushan Raj](https://github.com/ROUSHAN656/)
