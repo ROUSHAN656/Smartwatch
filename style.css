@@ -38,8 +38,8 @@ width: 172px;
 height: 110px;
 background:rgb(75, 2, 75);
 border-radius: 61px 61px 3px 3px;
-top:8%;
-left:36%;
+top:11%;
+left:34%;
 }
 .lowerStrap{
     position: absolute;
@@ -47,8 +47,8 @@ left:36%;
     height: 110px;
     background: rgb(75, 2, 75);
     border-radius: 3px 3px 61px 61px;
-    top: 77%;
-    left: 36%;
+    top: 68%;
+    left: 34%;
 }
   
 
@@ -114,6 +114,7 @@ position: absolute;
 left:8%;
 width: 200px;
 height: 120px;
+padding: 10px;
 background: rgba(25, 247, 220, 0.92);
 mix-blend-mode: normal;
 border-radius: 26px;
@@ -127,23 +128,29 @@ border-radius: 26px;
 }
 .reply{
 /* position: absolute; */
-width: 180px;
+width: 80px;
 height: 34px;
 background: #4CAD11;
 border-radius: 15px;
-top: 76%;
-left: 2%;
+position: absolute;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 16px;
+color: #FFF5F5;
+top: 75%;
+left: 10%;
 }
 
-  .dismiss{
-    position: absolute;
-    width: 80px;
-    height: 34px;
-    background: rgb(248, 89, 89);
-    border-radius: 15px;
-    left:49%;
-    top:75%;
-    }
+.dismiss{
+position: absolute;
+width: 80px;
+height: 34px;
+background: rgb(248, 89, 89);
+border-radius: 15px;
+left:49%;
+top:75%;
+ }
+
 .replyDismiss{
 position: absolute;
 width: 34px;
@@ -158,20 +165,9 @@ padding: 20px;
 top:-22%;
 left:-10%;
 }
-.reply{
-  position: absolute;
-  width: 75px;
-  height: 16px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  color: #FFF5F5;
-  padding: 16px;
-  top: 75%;
-  left: 3%;
-}
+/* .reply{
+
+} */
 .messages{
  position: absolute;
     left:1%;
