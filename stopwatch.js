@@ -1,3 +1,4 @@
+// Author: Roushan Raj
 function Stopwatch(){
     var time=10;
     var interval;
