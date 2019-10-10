@@ -10,8 +10,8 @@
         <!--Meta data for search engines and browsers-->
         <meta charset="UTF-8">
         <meta name="author" content="ROUSHAN RAJ">
-        <meta name="viewport" content="width = device-width, 
-        initial-Scale = 1.0">
+        <meta name="viewport" content="width = device-width, initial-Scale = 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
     </head>
     <!--main body-->
@@ -27,48 +27,84 @@
 <!--        The right half of the page -->
         <div class="split right">
             <!-- upper strap of the watch -->
-            <div class ="upperStrap"></div>
-            <!--lower strap of the watch-->
-            <div class="lowerStrap"></div>
-            <!--watch body-->
-            <div class="body">
-                <button class="messagingButton"name="button"id="first" value="OK" type="button">💬</button>
-                <button class="musicButton"name="button" id="second"value="OK" type="button">🎵</button>
-                <button class="clockButton"name="button" id="third"value="OK" type="button">🕓</button>
-                       
-                <div class="musicplayer"style="display: block">
-                        <div class="playMusic">
-                                <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
-                                width="238" height="260" frameborder="0" allowtransparency="true"
-                                allow="encrypted-media"></iframe>
+            <div class="container watch">
+                        <div class ="upperStrap"></div>
+                        <!--lower strap of the watch-->
+                        <div class="lowerStrap"></div>
+                        <!--watch body-->
+                        <div class="body">
+                                <button class="messagingButton"name="button"id="first" value="OK" type="button">💬</button>
+                                <button class="musicButton"name="button" id="second"value="OK" type="button">🎵</button>
+                                <button class="clockButton"name="button" id="third"value="OK" type="button">🕓</button>
+                                
+                                <div class="musicplayer"style="display: block">
+                                        <div class="playMusic">
+                                                <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                                width="238" height="260" frameborder="0" allowtransparency="true"
+                                                allow="encrypted-media"></iframe>
+                                        </div>
+                                </div> 
+                                
+                                
+                                <div class="stopwatch">
+                                        <!-- <div class="currentTime" style="background-color: tomato"><p class="time">10:00</p></div>
+                                        <div class="currentDate"style="background-color: grey"><p class="day">Saturday</p></div>    -->
+                                        <h1 id="timer"style="color:azure">00:00:00</h1>
+                                        <button id="start">START</button>
+                                        <button id="reset">RESET</button>
+                                </div>
+
+                
+                                <!--homescreen-->
+                                <div class="homescreen">
+                                        <div class="currentTime" style="background-color: tomato"><p id="time">10:00</p></div>
+                                        <div class="currentDate"style="background-color: grey"><p id="day">Saturday</p></div>
+                                        <div class="notifications">.    <strong>4 missed calls<br>.    2 messages</strong></div>
+                                        
+                                </div>
+
+                                <div class="container messages">
+                                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                                  James Bond
+                                                                </button>
+                                                              <div class="collapse" id="collapseExample">
+                                                                <div class="card card-body">
+                                                                  Hey, I tried calling you, but you did'nt recieved my call.
+                                                                </div>
+                                                                <button type="button" class="btn btn-info">Reply</button>
+                                                                <button type="button" class="btn btn-danger">Dismiss</button>
+                                                              </div>
+
+                                                              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                                        Ajith Ravi
+                                                                 </button>
+                                                                    <div class="collapse" id="collapseExample">
+                                                                      <div class="card card-body">
+                                                                        Hey, I tried calling you, but you did'nt recieved my call.
+                                                                      </div>
+                                                                      <button type="button" class="btn btn-info">Reply</button>
+                                                                      <button type="button" class="btn btn-danger">Dismiss</button>
+                                                                    </div>
+
+                                                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                                         Debarun
+                                                                </button>
+                                                                    <div class="collapse" id="collapseExample">
+                                                                        <div class="card card-body">
+                                                                         Hey, I tried calling you, but you did'nt recieved my call.
+                                                                        </div>
+                                                                        <button type="button" class="btn btn-info">Reply</button>
+                                                                        <button type="button" class="btn btn-danger">Dismiss</button>
+                                                                    </div>
+
+                                        <!-- <div class="NotificationBar"><p style="color: thistle">.  Messaging</p><p</div>
+                                        <div class="chatBaloon"><p><strong>.   Satya:</strong></p><p>Hey, this is a sample text to show the messages</p></div> -->
+                                        
+                                        <!-- <button class="reply"name="button"id="reply" value="OK" type="button">REPLY</button> -->
+                                        <!-- <button class="dismiss"name="button"id="dismiss" value="OK" type="button">DISMISS</button> -->
+                                </div>
                         </div>
-                </div> 
-                
-                
-                <div class="stopwatch">
-                            <!-- <div class="currentTime" style="background-color: tomato"><p class="time">10:00</p></div>
-                            <div class="currentDate"style="background-color: grey"><p class="day">Saturday</p></div>    -->
-                            <h1 id="timer"style="color:azure">00:00:00</h1>
-                            <button id="start">START</button>
-                            <button id="reset">RESET</button>
-
-
-                </div>  
-                
-                <!--homescreen-->
-                <div class="homescreen">
-                        <div class="currentTime" style="background-color: tomato"><p id="time">10:00</p></div>
-                        <div class="currentDate"style="background-color: grey"><p id="day">Saturday</p></div>
-                        <div class="notifications">.    <strong>4 missed calls<br>.    2 messages</strong></div>
-                        
-                </div>
-
-                <div class="messages">
-                        <div class="NotificationBar"><p style="color: thistle">.  Messaging</p><p</div>
-                        <div class="chatBaloon"><p><strong>.   Satya:</strong></p><p>Hey, this is a sample text to show the messages</p></div>
-                        <button class="reply"name="button"id="reply" value="OK" type="button">REPLY</button>
-                        <button class="dismiss"name="button"id="dismiss" value="OK" type="button">DISMISS</button>
-                </div>
+               </div>
         </div>
 
         <!--linking of js file and jquery-->
