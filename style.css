@@ -274,3 +274,14 @@
   border-radius: 10px;
   top: 55%;
 }
+.card-body{
+  background-color: blue;
+  color: azure;
+}
+.btn:hover{
+  background-color: chartreuse;
+  cursor:pointer;
+  font-size:20px;
+  transition: 0.1s;
+}
+
