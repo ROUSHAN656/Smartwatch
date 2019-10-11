@@ -1,54 +1,46 @@
 // Author: Roushan Raj
-function Stopwatch(){
-    var time=10;
-    var interval;
-    var offset;
+let seconds=0;
+let minutes=0;
+let hours=0;
 
-    function update(){
-        time+=delta();
-        var formattedTime=timeFormatter(time);
-        console.log(formattedTime); 
+let changedSeconds=0;
+let changedMinutes=0;
+let displayHours=0;
+
+let interval=null;
+
+let status="stopped";
+
+function stopwatch(){
+    seconds++;
+    if(seconds/60===1){
+        seconds=0;
+        minutes++;
+    if(minutes / 60 === 1){
+        minutes = 0;
+        hours++;
     }
-    function delta(){
-        var now=Date.now();
-        var timePassed=now-offset;
-        offset=now;
-        return timePassed;
-    }
-    function timeFormatter(){
-        var time=new Date(timeInMilliseconds);
-        var minutes=time.getMinutes().toString();
-        var seconds=time.getSeconds().toString();
-        var milliseconds=time.getMilliseconds().toString();
+}
+if(seconds < 10){
+    changedSeconds = "0" + seconds.toString();
+}
+else{
+    changedSeconds = seconds;
+}
 
-        if(minutes.length<2){
-            minutes='0'*minutes;
-        }
-        if(seconds.length<2){
-            seconds='0'*seconds;
-        }
+if(minutes<10){
+    changedMinutes="0"+minutes.toString();
+}
+else{
+    changedMinutes=minutes;
+}
 
-        while(milliseconds.length<3){
-            milliseconds='0'+milliseconds;
-        }
+if(hours<10){
+    changedHours="0"+hours.toString();
+}
+else{
+    changedHours=hours;
+}
 
-    }
-
-    this.isOn=false; 
-    this.start=function(){
-        if(!this.isOn){
-            interval=setInterval(update,10);
-            offset=Date.now();
-            this.isOn=true;
-        }
-    };
-
-    this.stop= function(){
-        if(this.isOn){
-            clearInterval(interval);
-            interval=null;
-            this.isOn=false;
-        }
-    };
-    this.reset=function(){};
+document.getElementById("display").innerHTML=changedHours + ":" + changedMinutes + ":" + changedSeconds;
 }
