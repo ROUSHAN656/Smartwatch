@@ -44,3 +44,31 @@ else{
 
 document.getElementById("display").innerHTML=changedHours + ":" + changedMinutes + ":" + changedSeconds;
 }
+ 
+
+function startStop(){
+    if(status==="stopped"){
+        interval = window.setInterval(stopWatch, 1000);
+        document.getElementById("startStop").innerHTML = "Stop";
+        status = "started";
+    }
+    else{
+
+        window.clearInterval(interval);
+        document.getElementById("startStop").innerHTML = "Start";
+        status = "stopped";
+
+    }
+
+}
+
+
+function reset(){
+    
+    window.clearInterval(interval);
+    seconds=0;
+    minutes=0;
+    hours=0;
+    document.getElementById("display").innerHTML="00:00:00";
+    document.getElementById("startStop").innerHTML="Start";
+}
