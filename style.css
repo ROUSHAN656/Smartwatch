@@ -114,17 +114,6 @@
   left: 33%;
 }
 
-.chatBaloon {
-  position: absolute;
-  left: 8%;
-  width: 200px;
-  height: 120px;
-  padding: 10px;
-  background: rgba(25, 247, 220, 0.92);
-  mix-blend-mode: normal;
-  border-radius: 26px;
-}
-
 .notificationBar {
   height: 20px;
   background-color: aliceblue;
@@ -133,7 +122,15 @@
   padding: 10px;
 }
 
-.messages {
+.messages{
+  position: absolute;
+  left: 1%;
+  width: 244px;
+  height: 278px;
+  background: black;
+  border-radius: 15px;
+}
+.timer{
   position: absolute;
   left: 1%;
   width: 244px;
@@ -142,7 +139,7 @@
   border-radius: 15px;
 }
 
-.stopwatch {
+/* .stopwatch {
   position: absolute;
   left: 1%;
   width: 244px;
@@ -150,7 +147,7 @@
   background: grey;
   border-radius: 15px;
   text-align: center;
-}
+} */
 
 
 .musicplayer {
@@ -227,13 +224,14 @@
   transition: 0.1s;
 }
 .display{
-  z-index: 1;
   color:azure;
-  width: 50%;
-  background-color: grey;
-  font-size: 72px;
-  text-align: center;
+  width: 100px;
+  font-size: 1em;
+  background-color:black;
   /* margin: 0px auto; */
+}
+.startResetButtons{
+
 }
 
 
