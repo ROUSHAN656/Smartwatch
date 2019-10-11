@@ -98,7 +98,6 @@
   border-radius: 50%;
   top: 88%;
   left: 28%;
-  hover
 }
 
 .clockButton {
@@ -134,49 +133,6 @@
   padding: 10px;
 }
 
-.reply {
-  /* position: absolute; */
-  width: 80px;
-  height: 34px;
-  background: #4CAD11;
-  border-radius: 15px;
-  position: absolute;
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 16px;
-  color: #FFF5F5;
-  top: 75%;
-  left: 10%;
-}
-
-.dismiss {
-  position: absolute;
-  width: 80px;
-  height: 34px;
-  background: rgb(248, 89, 89);
-  border-radius: 15px;
-  left: 49%;
-  top: 75%;
-}
-
-.replyDismiss {
-  position: absolute;
-  width: 34px;
-  height: 16px;
-  font-family: sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  color: #FFF5F5;
-  padding: 20px;
-  top: -22%;
-  left: -10%;
-}
-
-/* .reply{
-
-} */
 .messages {
   position: absolute;
   left: 1%;
@@ -191,25 +147,11 @@
   left: 1%;
   width: 244px;
   height: 278px;
-  background: black;
+  background: grey;
   border-radius: 15px;
   text-align: center;
 }
 
-#timer {
-  top: 50px;
-  color: aliceblue;
-  font-size: 50px;
-  font-weight: 200;
-}
-
-#start {
-  top: 80px;
-}
-
-#restart {
-  top: 80px;
-}
 
 .musicplayer {
   position: absolute;
@@ -284,4 +226,14 @@
   font-size:20px;
   transition: 0.1s;
 }
+.display{
+  z-index: 1;
+  color:azure;
+  width: 50%;
+  background-color: grey;
+  font-size: 72px;
+  text-align: center;
+  /* margin: 0px auto; */
+}
+
 

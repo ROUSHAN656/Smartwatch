@@ -11,7 +11,7 @@ let interval=null;
 
 let status="stopped";
 
-function stopwatch(){
+function timer(){
     seconds++;
     if(seconds/60===1){
         seconds=0;
@@ -48,7 +48,7 @@ document.getElementById("display").innerHTML=changedHours + ":" + changedMinutes
 
 function startStop(){
     if(status==="stopped"){
-        interval = window.setInterval(stopWatch, 1000);
+        interval = window.setInterval(timer, 1000);
         document.getElementById("startStop").innerHTML = "Stop";
         status = "started";
     }
@@ -57,14 +57,12 @@ function startStop(){
         window.clearInterval(interval);
         document.getElementById("startStop").innerHTML = "Start";
         status = "stopped";
-
     }
 
 }
 
-
 function reset(){
-    
+
     window.clearInterval(interval);
     seconds=0;
     minutes=0;
