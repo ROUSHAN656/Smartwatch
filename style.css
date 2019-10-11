@@ -275,11 +275,11 @@
   top: 55%;
 }
 .card-body{
-  background-color: blue;
+  background-color: rgb(30, 118, 168);
   color: azure;
 }
 .btn:hover{
-  background-color: chartreuse;
+  background-color:rgb(6, 49, 128);
   cursor:pointer;
   font-size:20px;
   transition: 0.1s;
