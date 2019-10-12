@@ -226,11 +226,35 @@
 .display{
   color:azure;
   width: 100px;
-  font-size: 1em;
+  font-size: 40px;
   background-color:black;
-  /* margin: 0px auto; */
 }
-.startResetButtons{
+#startStop{
+  border-radius: 10px;
+  padding: 5px;
+  background: black;
+  stroke: blue;
+  color: blue;
+}
+#reset{
+  border-radius: 10px;
+  padding: 5px;
+  background: black;
+  stroke: blue;
+  color: blue;
+}
+#reset:hover{
+  background:rgb(6, 49, 128);
+  font-size:20px;
+  transition: 0.1s;
+  color:whitesmoke;
+
+}
+#startStop:hover{
+  background:rgb(6, 49, 128);
+  font-size:20px;
+  transition: 0.1s;
+  color:whitesmoke;
 
 }
 
