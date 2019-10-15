@@ -51,8 +51,6 @@
   top: 74%;
   left: 36%;
 }
-
-
 .body {
   position: absolute;
   width: 248px;
@@ -75,7 +73,7 @@
 .messagingButton {
   position: relative;
   /* border:none; */
-  background-color: rgb(150, 27, 68);
+  background-color: grey;
   color: white;
   padding: 3px;
   display: inline-block;
@@ -86,10 +84,13 @@
   left: 23%;
 }
 
+.messagingButton:hover{
+  background-color: rgb(67, 109, 226);
+}
 .musicButton {
   position: relative;
   /* border:none; */
-  background-color: rgb(150, 27, 68);
+  background-color: grey;
   color: white;
   padding: 3px;
   display: inline-block;
@@ -99,11 +100,14 @@
   top: 88%;
   left: 28%;
 }
+.musicButton:hover{
+  background-color: rgb(67, 109, 226);
+}
 
 .clockButton {
   position: relative;
   /* border:none; */
-  background-color: rgb(150, 27, 68);
+  background-color: grey;
   color: white;
   padding: 3px;
   display: inline-block;
@@ -113,7 +117,9 @@
   top: 88%;
   left: 33%;
 }
-
+.clockButton:hover{
+  background-color: rgb(67, 109, 226);
+}
 .notificationBar {
   height: 20px;
   background-color: aliceblue;
@@ -138,18 +144,6 @@
   background: black;
   border-radius: 15px;
 }
-
-/* .stopwatch {
-  position: absolute;
-  left: 1%;
-  width: 244px;
-  height: 278px;
-  background: grey;
-  border-radius: 15px;
-  text-align: center;
-} */
-
-
 .musicplayer {
   position: absolute;
   left: 1%;
@@ -224,6 +218,7 @@
   transition: 0.1s;
 }
 .display{
+  left:25%;
   color:azure;
   width: 100px;
   font-size: 40px;
@@ -233,15 +228,15 @@
   border-radius: 10px;
   padding: 5px;
   background: black;
-  stroke: blue;
-  color: blue;
+  stroke: rgb(16, 72, 145);
+  color: rgb(85, 142, 207);
 }
 #reset{
   border-radius: 10px;
   padding: 5px;
   background: black;
-  stroke: blue;
-  color: blue;
+  stroke: rgb(16, 72, 145);
+  color:rgb(85, 142, 207);
 }
 #reset:hover{
   background:rgb(6, 49, 128);
@@ -255,7 +250,6 @@
   font-size:20px;
   transition: 0.1s;
   color:whitesmoke;
-
 }
 
 
