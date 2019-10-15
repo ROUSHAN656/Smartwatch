@@ -38,8 +38,8 @@
   height: 110px;
   background: rgb(15, 90, 160);
   border-radius: 61px 61px 3px 3px;
-  top: 4%;
-  left: 36%;
+  margin-top: 12px;
+  margin-left: 235px;
 }
 
 .lowerStrap {
@@ -48,8 +48,8 @@
   height: 110px;
   background:  rgb(15, 90, 160);
   border-radius: 3px 3px 61px 61px;
-  top: 74%;
-  left: 36%;
+  margin-top: 474px;
+  margin-left: 235px;
 }
 .body {
   position: absolute;
@@ -57,8 +57,8 @@
   height: 360px;
   background: rgb(53, 52, 52);
   border-radius: 45px;
-  top: 20%;
-  left: 30%;
+  margin-top: 120px;
+  margin-left: 200px;
 }
 
 .homescreen {
@@ -218,13 +218,18 @@
   transition: 0.1s;
 }
 .display{
-  left:44%;
+  position: absolute;
+  top:30px;
+  left:40px;
   color:azure;
   width: 100px;
   font-size: 40px;
   background-color:black;
 }
 #startStop{
+  position:absolute;
+  left:60px;
+  top:90px;
   border-radius: 10px;
   padding: 5px;
   background: black;
@@ -232,6 +237,9 @@
   color: rgb(85, 142, 207);
 }
 #reset{
+  position: absolute;
+  left:120px;
+  top:90px;
   border-radius: 10px;
   padding: 5px;
   background: black;
