@@ -82,6 +82,7 @@
   border-radius: 50%;
   top: 88%;
   left: 23%;
+  border: none;
 }
 
 .messagingButton:hover{
@@ -99,6 +100,7 @@
   border-radius: 50%;
   top: 88%;
   left: 28%;
+  border: none;
 }
 .musicButton:hover{
   background-color: rgb(67, 109, 226);
@@ -116,6 +118,7 @@
   border-radius: 50%;
   top: 88%;
   left: 33%;
+  border: none;
 }
 .clockButton:hover{
   background-color: rgb(67, 109, 226);
