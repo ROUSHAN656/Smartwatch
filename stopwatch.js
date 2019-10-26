@@ -60,7 +60,7 @@ function startStop(){
     }
 
 }
-
+// function for resetting the timer to zero
 function reset(){
 
     window.clearInterval(interval);
