@@ -45,7 +45,7 @@ else{
 document.getElementById("display").innerHTML=changedHours + ":" + changedMinutes + ":" + changedSeconds;
 }
  
-
+// function for start and stop
 function startStop(){
     if(status==="stopped"){
         interval = window.setInterval(timer, 1000);
