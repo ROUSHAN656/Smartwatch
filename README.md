@@ -10,6 +10,6 @@ Designed and developed by:- [Roushan Raj](https://github.com/ROUSHAN656/)
 
 # Screenshots
 
-![Alt text](https://github.com/shaik80/Brain-Teasers/blob/shaik/img/screenshot1.png?raw=true)
+![Alt text](https://github.com/ROUSHAN656/Smartwatch/blob/master/screenshots/Screenshot%20(45).png?raw=true)
 ![Alt text](https://github.com/shaik80/Brain-Teasers/blob/shaik/img/screenshot2.png?raw=true)
 ![Alt text](https://github.com/shaik80/Brain-Teasers/blob/shaik/img/screenshot3.png?raw=true)
